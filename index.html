@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>I'm Sorry</title>
+  <link rel="stylesheet" href="for.css" />
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="card">
+      <img src="DQ.png" alt="Us" class="photo" />
+      <h1>I'm Sorry 💫💔</h1>
+      <p>
+        I never wanted to make things uncomfortable.<br />
+        I just wanted to be honest about how I feel.<br /><br />
+
+        I respect your feelings and your space — always.<br />
+        I didn’t create this to change your mind, only to say this, from the heart:<br /><br />
+
+        <strong>Thank you</strong> for being a part of my life for these 6 years.<br />
+        You brought light to my world, and I’ll always cherish that.<br /><br />
+
+        I’m truly sorry if I ever made you feel awkward or pressured.<br />
+        That was never my intention. I care about you deeply, and I genuinely wish you happiness — always.
+      </p>
+
+      <p>
+        I know you're not interested in me that way.<br />
+        I knew you'd say no, and that's why I never said anything sooner.<br />
+        But please don’t ever think I was trying to cheat you or break our friendship.<br /><br />
+
+        The truth is... I suffered quietly, because our friendship meant everything to me.<br />
+        You're the only girl who's ever meant this much to me.<br />
+        Even now, I can’t explain exactly why — I just feel it deeply.<br /><br />
+
+        I even spoke to my mom about it — and surprisingly, she said the same thing you did.<br />
+        But she also told me something important...<br /><br />
+
+        "You didn’t do anything wrong by feeling what you feel — just be honest and respectful."<br /><br />
+
+        Please don't treat me like a stranger now.<br />
+        I took every risk silently, hid every emotion — only to protect what we had.<br />
+        I never wanted to lose our bond. I just wanted to be real — with love, not pressure.<br /><br />
+
+        Even my mom knows how much you mean to me...<br />
+        I just hope, someday, you’ll understand this wasn’t about expecting anything —<br />
+        It was about being honest, before silence turned into regret.
+      </p>
+
+      <p class="signature">– BY Sarvesh</p>
+    </div>
+  </div>
+
+  <!-- Hidden Audio -->
+  <audio id="bgMusic" loop>
+    <source src="she.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Script to auto-play music after first user click -->
+  <script>
+    document.addEventListener("click", () => {
+      const music = document.getElementById("bgMusic");
+      if (music.paused) {
+        music.play().catch(err => {
+          console.log("Autoplay blocked:", err);
+        });
+      }
+    }, { once: true });
+  </script>
+</body>
+</html>
